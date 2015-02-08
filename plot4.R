@@ -25,7 +25,7 @@ data <- filter(data, DateAndTime >= dateFrom & DateAndTime < dateUntil)
 # Plot it into a png file
 png(file = "plot4.png", width = 480, height = 480, bg = "transparent")
 
-par(mfrow = c(2, 2), mar = c(5,5,3,2))
+par(mfrow = c(2, 2), mar = c(4,4,4,2))
 
 # Topleft plot
 
