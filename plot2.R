@@ -23,7 +23,7 @@ dateUntil <- as.POSIXct("03/02/2007 00:00:00", format="%d/%m/%Y %H:%M:%S")
 data <- filter(data, DateAndTime >= dateFrom & DateAndTime < dateUntil)
 
 # Plot it into a png file
-png(file = "plot2.png", width = 480, height = 480)
+png(file = "plot2.png", width = 480, height = 480, bg = "transparent")
 with(data, plot(DateAndTime, Global_active_power, type = "l", xlab = "", ylab = "Global Active Power (kilowatts)"))
 dev.off()
 
